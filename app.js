@@ -7,7 +7,6 @@ let resetBtn = document.querySelector('.resetBtn')
 const displayStudents =(student = null)=>{
     let tbody = document.querySelector('.studentList') 
     if(student){
-        console.log('if chal raha he ')
         let row= document.createElement('tr');
         let data1 = document.createElement('td')
         data1.textContent =student.srNo
@@ -36,13 +35,12 @@ const displayStudents =(student = null)=>{
         tbody.append(row)
     }
     else{
-        console.log(' if nahi ')
         tbody.innerHTML = "";
         if (students.length=== 0 ) {
             let row = document.createElement('tr')
             let msgData = document.createElement('td')
             msgData.colSpan =8 
-            msgData.textContent ='No Data Found'
+            msgData.textContent ='No student data. Fill the form to add. '
             msgData.style.textAlign= 'center'
             row.appendChild(msgData)
             tbody.appendChild(row);
@@ -111,13 +109,13 @@ let mobile= document.querySelector('#mobile').value
     srNo++;
 
    let tbody = document.querySelector('.studentList')
-   if(tbody.innerHTML.includes('No Data Found')){
+   if(tbody.innerHTML.includes('No student data. Fill the form to add.')){
     tbody.innerHTML=""
    }
     displayStudents();
    
    resetForm();
-alert('Data added')
+alert('Student data added successfully')
 }
 const resetForm =()=>{
 document.querySelector("#name").value = ""
