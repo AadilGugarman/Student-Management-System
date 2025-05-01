@@ -14,6 +14,7 @@ h1 {
   background-color: #009879;
   color: #ffffff;
   line-height: 3rem;
+  width: 100%;
 }
 .user-content {
   display: flex;
@@ -27,7 +28,7 @@ h1 {
 .user-info {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex: 1 1 auto;
   width: 30%;
   color: #009879;
   font-weight: bold;
@@ -46,8 +47,6 @@ h1 {
 .gender-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
   margin-bottom: 20px;
   font-size: 1.25rem;
 }
@@ -60,9 +59,10 @@ h1 {
 .gender {
   display: flex;
   align-items: center;
-  gap: 20px;
+  align-content: center;
+  gap: 10px;
   height: 1.75rem;
-  padding: 1rem 0.75rem;
+  padding: 1rem;
   border: 2px solid #009879;
   border-radius: 0.5rem;
 }
