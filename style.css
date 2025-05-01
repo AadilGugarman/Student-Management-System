@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #eff7f6;
+}
+
+h1 {
+  text-align: center;
+  background-color: #009879;
+  color: #ffffff;
+  line-height: 3rem;
+}
+.user-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px 0;
+  width: 100%;
+  gap: 20px;
+}
+.user-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 30%;
+  color: #009879;
+  font-weight: bold;
+}
+.user-info label,
+.user-info input {
+  font-size: 1.25rem;
+}
+.user-info input {
+  padding: 1rem 0.75rem;
+  height: 1.75rem;
+  outline: none;
+  border: 2px solid #009879;
+  border-radius: 0.5rem;
+}
+.gender-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+}
+.gender-title {
+  margin-right: 21.5rem;
+  font-weight: bold;
+  color: #009879;
+}
+
+.gender {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 1.75rem;
+  padding: 1rem 0.75rem;
+  border: 2px solid #009879;
+  border-radius: 0.5rem;
+}
+.gender input {
+  margin: 8px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.btn button {
+  background-color: #009879;
+  color: #ffffff;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+}
+input,
+label {
+  cursor: pointer;
+}
+.btn button:hover {
+  background-color: #ffffff;
+  color: #009879;
+  border: 1px solid #009879;
+}
+.table-content {
+  border-collapse: collapse;
+  margin: 20px 0px;
+  font-size: 1em;
+  min-width: 400px;
+  width: 100%;
+}
+.table-content thead tr {
+  background-color: #009879;
+  color: white;
+  text-align: left;
+}
+.table-content td,
+th {
+  padding: 0.75rem 1rem;
+}
+.table-content tbody tr {
+  border-bottom: 1px solid #d3d3d3;
+}
+.table-content tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
