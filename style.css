@@ -97,7 +97,6 @@ label {
   border-collapse: collapse;
   margin: 20px 0px;
   font-size: 1em;
-  min-width: 400px;
   width: 100%;
 }
 .table-content thead tr {
@@ -123,8 +122,12 @@ th {
     width: 100%;
     max-width: none;
   }
+  .table-content {
+    max-width: max-content;
+  }
   th,
   td {
+    text-align: left;
     padding: 0.5rem;
   }
 }
