@@ -20,19 +20,25 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding: 0 3rem;
   align-items: center;
   margin: 20px 0;
   width: 100%;
   gap: 20px;
 }
-.user-info {
+.user-info,
+.gender-info {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
-  width: 30%;
+  width: max-content;
   color: #009879;
   font-weight: bold;
 }
+.gender-info {
+  align-items: center;
+}
+
 .user-info label,
 .user-info input {
   font-size: 1.25rem;
@@ -44,29 +50,24 @@ h1 {
   border: 2px solid #009879;
   border-radius: 0.5rem;
 }
-.gender-info {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-  font-size: 1.25rem;
-}
 .gender-title {
-  margin-right: 21.5rem;
+  margin-right: 20rem;
   font-weight: bold;
   color: #009879;
+  font-size: 1.25rem;
 }
 
-.gender {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  gap: 10px;
-  height: 1.75rem;
-  padding: 1rem;
+.genders {
   border: 2px solid #009879;
-  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  color: #000;
+  font-weight: normal;
+  max-width: 400px;
+  /* width: max-content; */
+  padding: 0.3rem 0.6rem;
 }
-.gender input {
+
+.genders input {
   margin: 8px;
 }
 .btn {
