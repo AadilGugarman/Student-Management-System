@@ -122,6 +122,9 @@ th {
     width: 100%;
     max-width: none;
   }
+  .birthDate {
+    max-width: 400px;
+  }
   .table-content {
     width: 50%;
   }
