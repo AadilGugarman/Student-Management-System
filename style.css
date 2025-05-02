@@ -124,10 +124,10 @@ th {
     max-width: none;
   }
   input[type="date"] {
-    min-width: 300px;
+    min-width: 350px;
   }
   .table-content {
-    width: 50%;
+    overflow: auto;
   }
   th,
   td {
