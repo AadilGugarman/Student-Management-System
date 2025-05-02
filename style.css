@@ -123,11 +123,12 @@ th {
     max-width: none;
   }
   .table-content {
-    max-width: max-content;
+    width: 50%;
   }
   th,
   td {
     text-align: left;
     padding: 0.5rem;
+    font-size: small;
   }
 }
