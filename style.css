@@ -34,13 +34,14 @@ h1 {
   width: 100%;
   color: #009879;
   font-weight: bold;
+  box-sizing: border-box;
 }
 
-.user-info label,
-.user-info input {
+.user-info label {
   font-size: 1.25rem;
 }
 .user-info input {
+  font-size: 1.25rem;
   padding: 1rem 0.75rem;
   height: 1.75rem;
   outline: none;
@@ -122,8 +123,8 @@ th {
     width: 100%;
     max-width: none;
   }
-  .birthDate {
-    max-width: 400px;
+  input[type="date"] {
+    min-width: 300px;
   }
   .table-content {
     width: 50%;
