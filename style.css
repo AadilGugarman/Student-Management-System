@@ -32,7 +32,6 @@ h1 {
   flex-direction: column;
   flex: 1 1 auto;
   max-width: max-content;
-  width: 100%;
   color: #009879;
   font-weight: bold;
   box-sizing: border-box;
@@ -62,7 +61,6 @@ h1 {
   border-radius: 0.5rem;
   font-size: 1.25rem;
   color: #000;
-  max-width: max-content;
   width: 100%;
   font-weight: normal;
   padding: 0.2rem 0.6rem;
@@ -95,7 +93,10 @@ label {
   color: #009879;
   border: 1px solid #009879;
 }
-
+.table-responsive {
+  overflow: auto;
+  white-space: nowrap;
+}
 .table-content {
   border-collapse: collapse;
   margin: 20px 0px;
