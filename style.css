@@ -131,6 +131,9 @@ th {
     width: 100%;
     max-width: none;
   }
+  .genders {
+    font-size: 1rem;
+  }
   input[type="date"] {
     min-width: 360px;
   }
