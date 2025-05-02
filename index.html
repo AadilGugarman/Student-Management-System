@@ -40,12 +40,7 @@
           </div>
           <div class="user-info">
             <label for="birtdate">Date of Birth</label>
-            <input
-              type="text"
-              placeholder="Enter Date of Birth"
-              id="birthDate"
-              name="birthdate"
-            />
+            <input type="date" s id="birthDate" name="birthdate" />
           </div>
           <div class="user-info">
             <label for="email">Email ID</label>
@@ -90,22 +85,23 @@
           <button class="resetBtn">Reset</button>
         </div>
       </form>
-
-      <table class="table-content">
-        <thead>
-          <tr>
-            <th>SR No.</th>
-            <th>Full Name</th>
-            <th>Roll No.</th>
-            <th>Address</th>
-            <th>D.O.B</th>
-            <th>Email ID</th>
-            <th>Mobile No.</th>
-            <th>Gender</th>
-          </tr>
-        </thead>
-        <tbody class="studentList"></tbody>
-      </table>
+      <div class="table-responsive">
+        <table class="table-content">
+          <thead>
+            <tr>
+              <th>SR No.</th>
+              <th>Full Name</th>
+              <th>Roll No.</th>
+              <th>Address</th>
+              <th>D.O.B</th>
+              <th>Email ID</th>
+              <th>Mobile No.</th>
+              <th>Gender</th>
+            </tr>
+          </thead>
+          <tbody class="studentList"></tbody>
+        </table>
+      </div>
     </div>
     <script src="app.js"></script>
   </body>

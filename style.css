@@ -19,9 +19,8 @@ h1 {
 .user-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 0 3rem;
   align-items: center;
+  padding: 0 1rem;
   margin: 20px 0;
   width: 100%;
   gap: 20px;
@@ -31,12 +30,10 @@ h1 {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
-  width: max-content;
+  max-width: max-content;
+  width: 100%;
   color: #009879;
   font-weight: bold;
-}
-.gender-info {
-  align-items: center;
 }
 
 .user-info label,
@@ -49,9 +46,10 @@ h1 {
   outline: none;
   border: 2px solid #009879;
   border-radius: 0.5rem;
+  background-color: transparent;
 }
 .gender-title {
-  margin-right: 20rem;
+  margin-right: 19rem;
   font-weight: bold;
   color: #009879;
   font-size: 1.25rem;
@@ -59,12 +57,13 @@ h1 {
 
 .genders {
   border: 2px solid #009879;
+  border-radius: 0.5rem;
   font-size: 1.25rem;
   color: #000;
+  max-width: max-content;
+  width: 100%;
   font-weight: normal;
-  max-width: 400px;
-  /* width: max-content; */
-  padding: 0.3rem 0.6rem;
+  padding: 0.2rem 0.6rem;
 }
 
 .genders input {
@@ -115,4 +114,17 @@ th {
 }
 .table-content tbody tr:last-of-type {
   border-bottom: 2px solid #009879;
+}
+
+@media (max-width: 600px) {
+  .user-info,
+  .gender-info,
+  .genders {
+    width: 100%;
+    max-width: none;
+  }
+  th,
+  td {
+    padding: 0.5rem;
+  }
 }
